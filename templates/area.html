@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+</head>
+
+<body>
+
+  
+  <!-- Header -->
+
+
+  <!-- Prediction and Tests and Results -->
+
+  <div class="prediction">
+    <form id="upload-file" action = "{{url_for('find_area')}}" method="POST" enctype="multipart/form-data">
+      <div class="row imgUp">
+
+        <label for="imageUpload" class="upload-label">
+          Please Upload your Image to calculate the area<br>
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        <br>
+        </div>
+        <button class="formBut btn btn-outline-dark btn-lg" type="submit" name = "button"> CALCULATE </button>
+        <button class="formBut btn btn-outline-danger btn-lg" type="reset" name="button"> RESET </button>
+    </form>
+  </div>
+
+
+  <!-- footer -->
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" type="text/javascript">
+
+  </script>
+</body>
+
+
+</html>
